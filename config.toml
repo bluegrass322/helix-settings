@@ -1,0 +1,28 @@
+[editor]
+line-number = "relative"
+mouse = false
+shell = ["zsh", "-c"]
+cursorline = true
+true-color = true
+undercurl = true
+bufferline = "always"
+
+[editor.statusline]
+left = ["version-control"]
+right = ["mode", "spinner", "diagnostics", "file-encoding", "file-line-ending", "file-type"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.whitespace]
+rendre = "all"
+
+[editor.indent-guides]
+render = true
+
+[keys.insert]
+j = { k = "normal_mode" }
+
