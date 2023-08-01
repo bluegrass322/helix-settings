@@ -2,14 +2,15 @@
 line-number = "relative"
 mouse = false
 shell = ["zsh", "-c"]
-cursorline = true
+# cursorline = true
 true-color = true
 undercurl = true
 bufferline = "always"
+color-modes = true
 
 [editor.statusline]
-left = ["version-control"]
-right = ["mode", "spinner", "diagnostics", "file-encoding", "file-line-ending", "file-type"]
+left = ["mode", "spacer", "version-control"]
+right = ["file-modification-indicator", "diagnostics", "file-type"]
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
@@ -17,12 +18,12 @@ mode.select = "SELECT"
 [editor.cursor-shape]
 insert = "bar"
 
-[editor.whitespace]
-rendre = "all"
+[editor.file-picker]
+hidden = false
 
 [editor.indent-guides]
 render = true
+charactor = "▏"
 
 [keys.insert]
 j = { k = "normal_mode" }
-
